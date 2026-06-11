@@ -9,32 +9,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Rosalinda Senapilo - Frontend Web Developer portfolio landing page." />
+  <meta name="description" content="Rosalinda Senapilo — Frontend Web Developer specializing in WordPress, React, and responsive UI." />
 </head>
 <body>
+
+  <!-- ── HEADER ─────────────────────────────────────────── -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home">
-        <img class="brand-logo" src="assets/images/portfolio-logos.png" alt="Rosalinda profile picture" />
-    </a>
-      <nav class="nav-links">
+        <img class="brand-logo" src="assets/images/portfolio-logos.png" alt="Rosalinda Senapilo logo" />
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#work">Work</a>
         <a href="#contact">Contact</a>
       </nav>
       <a class="btn-resume" href="assets/images/Rosalinda-Senapilo-CV.pdf" download aria-label="Download Resume">
-        <i class="fas fa-download"></i> Resume
+        <i class="fas fa-download" aria-hidden="true"></i> Resume
       </a>
     </div>
   </header>
 
   <main>
+
+    <!-- ── HERO ──────────────────────────────────────────── -->
     <section id="home" class="hero-section">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Frontend Web Developer</p>
-          <h1>Hi, I’m Rosalinda.</h1>
+          <h1 id="typing-heading" aria-label="Hi, I'm Rosalinda."><br /></h1>
           <p>I build modern, responsive web experiences with clean code, polished interfaces, and a human-first design approach.</p>
           <div class="hero-actions">
             <a class="btn primary" href="#work">View Projects</a>
@@ -42,17 +46,18 @@
           </div>
         </div>
         <div class="hero-card hero-profile-card">
-          <img class="profile-placeholder" src="assets/images/profile-pic.jpg" alt="Rosalinda profile picture" />
+          <img class="profile-placeholder" src="assets/images/profile-pic.jpg" alt="Rosalinda Senapilo" />
         </div>
       </div>
     </section>
 
+    <!-- ── ABOUT ─────────────────────────────────────────── -->
     <section id="about" class="section about-section">
       <div class="container section-grid">
         <div>
           <p class="section-label">About</p>
           <h2>Frontend Web Developer with 5 years of experience.</h2>
-          <p>I am a Frontend Web Developer with 5 years of professional experience at Fullstack HQ Inc., specializing in WordPress development (Elementor, Divi, WPBakery), ACF custom post types & Gutenberg blocks, and SEO optimization. I build responsive, user-friendly websites with a strong focus on performance and usability. Familiar with modern frontend frameworks (React, Next.js) and CSS libraries, with proven ability to handle complete WordPress setups including themes, plugins, and custom functionalities.</p>
+          <p>I am a Frontend Web Developer with 5 years of professional experience at Fullstack HQ Inc., specializing in WordPress development (Elementor, Divi, WPBakery), ACF custom post types &amp; Gutenberg blocks, and SEO optimization. I build responsive, user-friendly websites with a strong focus on performance and usability. Familiar with modern frontend frameworks (React, Next.js) and CSS libraries, with proven ability to handle complete WordPress setups including themes, plugins, and custom functionalities.</p>
         </div>
         <div class="about-list">
           <div>
@@ -71,28 +76,169 @@
       </div>
     </section>
 
+    <!-- ── SKILLS ────────────────────────────────────────── -->
     <section id="skills" class="section skills-section">
       <div class="container">
         <p class="section-label">Skills</p>
         <h2>Tools and technologies I work with.</h2>
-        <div class="skill-grid">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>React</span>
-          <span>Responsive design</span>
-          <span>Figma collaboration</span>
-          <span>Accessibility</span>
-          <span>Web performance</span>
+      </div>
+
+      <!-- Full-bleed marquee (outside .container so edges bleed) -->
+      <div class="skills-marquee-wrapper" style="margin-top:2.5rem;" aria-label="Skills marquee">
+        <div class="skills-track" id="skills-track">
+
+          <!-- Set 1 -->
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" aria-hidden="true" />
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" aria-hidden="true" />
+            <span>CSS3</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" aria-hidden="true" />
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" aria-hidden="true" />
+            <span>React</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="" aria-hidden="true" style="filter:invert(1) grayscale(20%);" />
+            <span>Next.js</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="" aria-hidden="true" />
+            <span>WordPress</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" aria-hidden="true" />
+            <span>PHP</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="" aria-hidden="true" />
+            <span>Tailwind CSS</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="" aria-hidden="true" />
+            <span>Sass</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="" aria-hidden="true" />
+            <span>Figma</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="" aria-hidden="true" />
+            <span>Vite</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" aria-hidden="true" />
+            <span>Git</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" aria-hidden="true" style="filter:invert(1) grayscale(20%);" />
+            <span>GitHub</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" alt="" aria-hidden="true" />
+            <span>Bitbucket</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/shopify.svg" alt="" aria-hidden="true" style="filter:invert(1) drop-shadow(0 0 2px #96bf48);" />
+            <span>Shopify</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" aria-hidden="true" />
+            <span>VS Code</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/builderio.svg" alt="" aria-hidden="true" style="filter:invert(1);" />
+            <span>Builder.io</span>
+          </div>
+
+          <!-- Set 2 — duplicate for seamless loop -->
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" aria-hidden="true" />
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" aria-hidden="true" />
+            <span>CSS3</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" aria-hidden="true" />
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" aria-hidden="true" />
+            <span>React</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="" aria-hidden="true" style="filter:invert(1) grayscale(20%);" />
+            <span>Next.js</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="" aria-hidden="true" />
+            <span>WordPress</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" aria-hidden="true" />
+            <span>PHP</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="" aria-hidden="true" />
+            <span>Tailwind CSS</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="" aria-hidden="true" />
+            <span>Sass</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="" aria-hidden="true" />
+            <span>Figma</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="" aria-hidden="true" />
+            <span>Vite</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" aria-hidden="true" />
+            <span>Git</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" aria-hidden="true" style="filter:invert(1) grayscale(20%);" />
+            <span>GitHub</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" alt="" aria-hidden="true" />
+            <span>Bitbucket</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/shopify.svg" alt="" aria-hidden="true" style="filter:invert(1) drop-shadow(0 0 2px #96bf48);" />
+            <span>Shopify</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="" aria-hidden="true" />
+            <span>VS Code</span>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/builderio.svg" alt="" aria-hidden="true" style="filter:invert(1);" />
+            <span>Builder.io</span>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- ── WORK ──────────────────────────────────────────── -->
     <section id="work" class="section work-section">
       <div class="container">
         <p class="section-label">Work</p>
         <h2>Projects</h2>
         <div class="project-grid">
+
+          <!-- Featured: Ubiquity -->
           <article class="project-card project-summary-card">
             <p class="project-description">Developed and maintained sections of the Ubiquity corporate website using Next.js and Builder.io CMS.</p>
             <span class="project-meta">Corporate website</span>
@@ -104,20 +250,26 @@
               <li>Improved page performance and SEO using Next.js server-side rendering and optimized assets.</li>
             </ul>
           </article>
+
+          <!-- Shopify -->
           <article class="project-card">
             <p class="project-description">E-commerce storefront built with Shopify with custom product pages and checkout optimization.</p>
             <span class="project-meta">E-commerce</span>
             <h3>Shopify Store</h3>
           </article>
+
+          <!-- React -->
           <article class="project-card">
             <p class="project-description">React-based web application with dynamic components, state management, and responsive design.</p>
             <span class="project-meta">React application</span>
             <h3>React Project</h3>
           </article>
+
+          <!-- Featured: WordPress -->
           <article class="project-card project-summary-card">
             <p class="project-description">Custom WordPress theme development for multiple client websites with flexible Gutenberg blocks, ACF, Sage, Tailwind CSS, Blade, PHP, JavaScript, and Vite.</p>
             <span class="project-meta">WordPress theme development</span>
-            <h3>Multiple client sites</h3>
+            <h3>Multiple Client Sites</h3>
             <p class="project-description"><strong>Tech Stack:</strong> WordPress, Gutenberg Blocks, ACF, Sage 10 / Sage 11, Vite, Tailwind CSS, Blade, PHP, JavaScript.</p>
             <ul>
               <li>Developed custom WordPress themes using Sage 10 and Sage 11 (Roots ecosystem).</li>
@@ -130,62 +282,73 @@
               <li>Collaborated with designers to implement pixel-perfect layouts.</li>
             </ul>
           </article>
+
+          <!-- Client sites with screenshots -->
           <article class="project-card">
-            <img class="project-image" src="assets/images/susan-shares.png" alt="Logos placeholder for SusanShares" />
+            <img class="project-image" src="assets/images/susan-shares.png" alt="SusanShares website screenshot" />
             <h3>SusanShares</h3>
           </article>
+
           <article class="project-card">
-            <img class="project-image" src="assets/images/andy-millet.png" alt="Logos placeholder for Andy Millet" />
+            <img class="project-image" src="assets/images/andy-millet.png" alt="Andy Millet website screenshot" />
             <h3>Andy Millet</h3>
           </article>
+
           <article class="project-card">
-            <img class="project-image" src="assets/images/elect-anders.png" alt="Logos placeholder for Elect Anders" />
+            <img class="project-image" src="assets/images/elect-anders.png" alt="Elect Anders website screenshot" />
             <h3>Elect Anders</h3>
           </article>
+
           <article class="project-card">
-            <img class="project-image" src="assets/images/capitol-painting.png" alt="Logos placeholder for Capitol Painting Company" />
+            <img class="project-image" src="assets/images/capitol-painting.png" alt="Capitol Painting Company website screenshot" />
             <h3>Capitol Painting Company</h3>
           </article>
+
           <article class="project-card">
-            <img class="project-image" src="assets/images/rainier-plumbing.png" alt="Logos placeholder for Rainier Plumbing" />
+            <img class="project-image" src="assets/images/rainier-plumbing.png" alt="Rainier Plumbing website screenshot" />
             <h3>Rainier Plumbing</h3>
           </article>
+
           <article class="project-card">
-            <img class="project-image" src="assets/images/susan-cox.png" alt="Logos placeholder for Susan Cox Foundation" />
+            <img class="project-image" src="assets/images/susan-cox.png" alt="Susan Cox Foundation website screenshot" />
             <h3>Susan Cox Foundation</h3>
           </article>
+
         </div>
       </div>
     </section>
 
+    <!-- ── CONTACT ───────────────────────────────────────── -->
     <section id="contact" class="section contact-section">
       <div class="container contact-card">
         <div>
           <p class="section-label">Contact</p>
-          <h2>Let’s build something together.</h2>
-          <p>Interested in collaborating or want to discuss your next frontend project? Send a message and I’ll reply shortly.</p>
+          <h2>I Am Available For Freelance.</h2>
+          <p>Interested in collaborating or want to discuss your next frontend project? Send a message and I'll reply shortly.</p>
         </div>
-        <a class="btn primary" href="mailto:work.rsenapilo20@gmail.com">work.rsenapilo20@gmail.com</a>
+        <a class="btn primary" href="mailto:work.rsenapilo20@gmail.com">Get in Touch</a>
       </div>
     </section>
+
   </main>
 
+  <!-- ── FOOTER ────────────────────────────────────────── -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-inner">
         <p>© 2026 Rosalinda Senapilo. Frontend Web Developer.</p>
         <div class="social-links">
           <a href="https://www.linkedin.com/in/rosalinda-senapilo/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
-            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
           </a>
           <a href="https://www.facebook.com/rosalinda.soriano.127/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
-            <i class="fab fa-facebook"></i>
+            <i class="fab fa-facebook" aria-hidden="true"></i>
           </a>
           <a href="https://github.com/workrsenapilo20-rs" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github" aria-hidden="true"></i>
           </a>
           <a href="mailto:work.rsenapilo20@gmail.com" aria-label="Email" class="social-icon">
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
           </a>
         </div>
       </div>
@@ -193,5 +356,71 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    (function () {
+      const el = document.getElementById('typing-heading');
+      const staticText = "Hi, I'm ";
+      const typedWord = "Rosalinda.";
+      const typeSpeed = 90;
+      const deleteSpeed = 55;
+      const pauseAfterType = 1800;
+      const pauseAfterDelete = 400;
+
+      /* Build: "Hi, I'm" + <br> as static nodes + typed span + cursor */
+      el.appendChild(document.createTextNode("Hi, I\u2019m"));
+      el.appendChild(document.createElement('br'));
+
+      const typed = document.createElement('span');
+      typed.style.cssText = 'color:inherit';
+      el.appendChild(typed);
+
+      const cursor = document.createElement('span');
+      cursor.setAttribute('aria-hidden', 'true');
+      cursor.style.cssText = [
+        'display:inline-block',
+        'width:3px',
+        'height:0.82em',
+        'background:currentColor',
+        'margin-left:3px',
+        'vertical-align:middle',
+        'border-radius:1px',
+        'animation:blink 0.85s step-end infinite'
+      ].join(';');
+      el.appendChild(cursor);
+
+      const style = document.createElement('style');
+      style.textContent = '@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}';
+      document.head.appendChild(style);
+
+      let i = 0;
+      let deleting = false;
+
+      function tick() {
+        if (!deleting) {
+          /* Typing forward */
+          typed.textContent = typedWord.slice(0, i + 1);
+          i++;
+          if (i === typedWord.length) {
+            deleting = true;
+            setTimeout(tick, pauseAfterType);
+          } else {
+            setTimeout(tick, typeSpeed);
+          }
+        } else {
+          /* Deleting */
+          typed.textContent = typedWord.slice(0, i - 1);
+          i--;
+          if (i === 0) {
+            deleting = false;
+            setTimeout(tick, pauseAfterDelete);
+          } else {
+            setTimeout(tick, deleteSpeed);
+          }
+        }
+      }
+
+      setTimeout(tick, 500);
+    })();
+  </script>
 </body>
 </html>
